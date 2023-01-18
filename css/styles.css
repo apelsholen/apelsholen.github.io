@@ -15,7 +15,8 @@ header {
     box-sizing: border-box;
     width: 100%;
     position: fixed;
-    background-color: #100530;
+    background-color: #10053050;
+    backdrop-filter: blur(5px);
 }
 
 .banner {
@@ -60,7 +61,7 @@ header {
 .top {
     width: 100%;
     height: 400px;
-    background-color: #100550;
+    background-image: linear-gradient(45deg, #000530 0%, #4005dd 100%);
     z-index: 1;
 }
 
@@ -77,7 +78,7 @@ header {
   }
   
   .wave {
-    z-index: 1000;
+    z-index: 100;
     background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 88.7'%3E%3Cpath d='M800 56.9c-155.5 0-204.9-50-405.5-49.9-200 0-250 49.9-394.5 49.9v31.8h800v-.2-31.6z' fill='%23100530'/%3E%3C/svg%3E");
     position: absolute;
     width: 200%;
