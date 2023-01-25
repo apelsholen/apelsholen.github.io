@@ -17,6 +17,7 @@ header {
     position: fixed;
     background-color: #10053050;
     backdrop-filter: blur(5px);
+    z-index: 1000;
 }
 
 .banner {
@@ -75,9 +76,9 @@ header {
     left: 0;
     right: 0;
     overflow-x: hidden;
-  }
+}
   
-  .wave {
+.wave {
     z-index: 100;
     background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 88.7'%3E%3Cpath d='M800 56.9c-155.5 0-204.9-50-405.5-49.9-200 0-250 49.9-394.5 49.9v31.8h800v-.2-31.6z' fill='%23100530'/%3E%3C/svg%3E");
     position: absolute;
@@ -87,22 +88,26 @@ header {
     transform: translate3d(0, 0, 0);
     opacity: 1;
     bottom: 0;
-  }
+}
   
-  .wave:nth-of-type(2) {
+.wave:nth-of-type(2) {
     animation: wave 15s linear reverse infinite;
     opacity: 0.5;
     height: 20%;
-  }
+}
   
-  .wave:nth-of-type(3) {
+.wave:nth-of-type(3) {
     animation: wave s 30-1s linear infinite;
     opacity: 0.3;
     height: 25%;
-  }
+}
   
-  @keyframes wave {
-      0% {transform: translateX(0);}
-      50% {transform: translateX(-25%);}
-      100% {transform: translateX(-50%);}
-  }
+@keyframes wave {
+    0% {transform: translateX(0);}
+    50% {transform: translateX(-25%);}
+    100% {transform: translateX(-50%);}
+}
+
+header.Solid {
+    background-color: aqua;
+}
