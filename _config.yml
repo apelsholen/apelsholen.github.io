@@ -1,0 +1,12 @@
+domain: apelsholen.github.io 
+
+url: https://apelsholen.github.io
+
+remote_theme: pages-themes/cayman@v0.2.0
+plugins:
+- jekyll-remote-theme
+
+title: Amund's side
+description: Mens vi venter
+
+show_downloads: false
